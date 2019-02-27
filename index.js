@@ -174,7 +174,7 @@ function moveDodgerRight() {
    window.requestAnimationFrame(moveDodgerRight)
    }
    }
-}
+
 
 /**
  * @param {string} p The position property
