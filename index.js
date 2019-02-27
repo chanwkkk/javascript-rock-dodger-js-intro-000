@@ -153,9 +153,11 @@ function moveDodgerLeft() {
    */
 let leftNumbers=dodger.style.left.replace("px","");
 let left=parseInt(leftNumbers,10)
-left-=4;
+if(left>0){
+  left-=4;
 dodger.style.left=`${left}px`
 window.requestAnimationFrame()
+}
 }
 
 function moveDodgerRight() {
